@@ -1,0 +1,13 @@
+<script>
+  document.getElementById("logoutBtn").addEventListener("click", function () {
+    const konfirmasi = confirm("Yakin ingin keluar?");
+    if (konfirmasi) {
+      // (Opsional) hapus status login dari localStorage
+      localStorage.removeItem("isLoggedIn");
+
+      // Redirect ke halaman login / index.html
+      window.location.href = "index.html";
+    }
+    // Kalau Cancel, tidak terjadi apa-apa
+  });
+</script>

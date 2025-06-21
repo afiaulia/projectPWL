@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portofolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+    body {
+      background-color: #111827;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: orange;
+    }
+
+    .team-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .member {
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid orange;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s ease;
+    }
+
+    .profile-img:hover {
+      transform: scale(1.05);
+    }
+
+    .name {
+      margin-top: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #FFD700;
+    }
+  </style>
+</head>
+  
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-gray-900/95 backdrop-blur-sm z-50 py-4">
+        <div class="container mx-auto px-6 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+            </div>
+            
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#home" class="hover:text-orange-500 transition-colors">Home</a></li>
+                <li><a href="#services" class="hover:text-orange-500 transition-colors">content</a></li>
+                <li><a href="#about" class="text-orange-500">comment</a></li>
+                <li><a href="#contact" class="hover:text-orange-500 transition-colors">Contact</a></li>
+                
+            </ul>
+           
+            <button class="bg-orange-500 hover:bg-orange-600 px-6 py-2 pb-3 rounded-full transition-colors" onclick="window.location.href = 'login.html';">
+                Logout
+            </button>
+            
+            <!-- Mobile menu button -->
+            <button class="md:hidden" id="mobile-menu-btn">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-gray-800 py-4" id="mobile-menu">
+            <div class="container mx-auto px-6">
+                <ul class="space-y-4">
+                    <li><a href="#home" class="block hover:text-orange-500 transition-colors">Home</a></li>
+                    <li><a href="#services" class="block hover:text-orange-500 transition-colors">content</a></li>
+                    <li><a href="#about" class="block text-orange-500">comment</a></li>
+                    <li><a href="#contact" class="block hover:text-orange-500 transition-colors">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-8">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4"></h1>
+                <nav class="text-gray-400">
+                    <span></span> <span class="mx-2"></span> <span class="text-orange-500"></span>
+                </nav>
+        
+  <title>Tim Kami</title>
+  <h1>Our Team</h1>
+
+  <div class="team-container">
+    
+    <div class="member">
+      <a href="afi.html" target="_blank">
+        <img src="afi.jpg" alt="afi aulia" class="profile-img">
+      </a>
+      <div class="name">Afi Aulia</div>
+    </div>
+    
+    <div class="member">
+    <a href="bella.html" target="_blank">
+      <img src="2.jpg" alt="Saira" class="profile-img">
+      <div class="name">Bella Diva</div>
+    </a>
+    </div>
+
+    <div class="member">
+    <a href="ell.html" target="_blank">
+      <img src="3.jpg" alt="Alya" class="profile-img">
+      <div class="name">Nurul Laylatul</div>
+    </a>
+    </div>
+
+    <div class="member">
+    <a href="tiara.html" target="_blank">
+      <img src="4.jpg" alt="Budi" class="profile-img">
+      <div class="name">Tiara Ramadhania</div>
+    </a>
+    </div>
+
+    <div class="member">
+    <a href="ogi.html" target="_blank">
+      <img src="5.jpg" alt="Dimas" class="profile-img">
+      <div class="name">Ahmad fauzi</div>
+    </a>
+    </div>
+
+    <div class="member">
+    <a href="angger.html" target="_blank">
+      <img src="6.jpg" alt="Intan" class="profile-img">
+      <div class="name">Angger Budianto</div>
+    </a>
+    </div>
+
+    <div class="member">
+    <a href="mus.html" target="_blank">
+      <img src="7.jpg" alt="Tari" class="profile-img">
+      <div class="name">Nurul Mustofa</div>
+    </a>
+    </div>
+
+    <div class="member">
+    <a href="hasan.html" target="_blank">
+      <img src="8.jpg" alt="Rizky" class="profile-img">
+      <div class="name">Nur Hasan</div>
+    </a>
+    </div>
+  </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Our <span class="text-orange-500">Content</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Hal hal menarik yang bisa kalian baca di katalog kami
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-gray-800 rounded-lg overflow-hidden group hover:transform hover:scale-105 transition-all duration-300"
+                onclick="window.open('sejarah.html','_blank')"
+                style="cursor:pointer">
+                    <div class="relative">
+                        <img src="srj.jpg" 
+                             alt="UI/UX Design" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4">
+                            <h3 class="text-xl font-bold text-white">Sejarah</h3>
+                        </div>
+                        <div class="absolute bottom-4 right-4">
+                            <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center group-hover:bg-orange-600 transition-colors">
+                                <i class="fas fa-arrow-right text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 rounded-lg overflow-hidden group hover:transform hover:scale-105 transition-all duration-300" onclick="window.open('dongeng.html','_blank')"
+                style="cursor:pointer">
+                    
+                    <div class="relative">
+                        <img src="dng.jpg" 
+                             alt="Web Design" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4">
+                            <h3 class="text-xl font-bold text-white">Dongeng</h3>
+                        </div>
+                        <div class="absolute bottom-4 right-4">
+                            <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center group-hover:bg-orange-600 transition-colors">
+                                <i class="fas fa-arrow-right text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 rounded-lg overflow-hidden group hover:transform hover:scale-105 transition-all duration-300"
+                onclick="window.open('pu.html','_blank')"
+                style="cursor:pointer">
+                    <div class="relative">
+                        <img src="penum.jpeg" 
+                             alt="Web Development" 
+                             class="w-full h-48 object-cover">
+                        <div class="absolute top-4 left-4">
+                            <h3 class="text-xl font-bold text-white">Pengetahuan Alam</h3>
+                        </div>
+                        <div class="absolute bottom-4 right-4">
+                            <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center group-hover:bg-orange-600 transition-colors">
+                                <i class="fas fa-arrow-right text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button class="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-full transition-colors">
+                    View All
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">What My <span class="text-orange-500">Clients Say</span></h2>
+                
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face" 
+                             alt="Robert Jr." 
+                             class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Robert Jr.</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 italic">
+                        "mantap menambah ilmu baru"
+                    </p>
+                </div>
+                
+                <div class="bg-gray-900 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="cipi.jpg" 
+                             alt="Anouska Z." 
+                             class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Anouska Z.</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 italic">
+                        "nice!"
+                    </p>
+                </div>
+                
+                <div class="bg-gray-900 p-8 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop&crop=face" 
+                             alt="Jaxon R." 
+                             class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold">Jaxon R.</h4>
+                            <div class="flex text-yellow-400 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 italic">
+                        "seruuu!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">RF</span>
+                        </div>
+                        <span class="text-xl font-bold">Kelompok 1</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        website ini kami buat untuk memenuhi persyaratan tugas besar matakuliah pemrograman web lanjut
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-orange-500 transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Navigation</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-orange-500 transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-orange-500 transition-colors">comment</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-orange-500 transition-colors">content</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-orange-500 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Contact</h3>
+                    <ul class="space-y-3">
+                        <li class="text-gray-400">+626538299654</li>
+                        <li class="text-gray-400">rf1234@gmail.com</li>
+                        <li class="text-gray-400">Jl. Nangka Raya No.58 C, RT.7/RW.5, Tj. Bar., Kec. Jagakarsa, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12530</li>
+                        <li class="text-gray-400">Mon - Fri | 9am-6pm</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Get the latest information</h3>
+                    <div class="flex mb-4">
+                        <input type="email" 
+                               placeholder="Enter your email" 
+                               class="flex-1 px-4 py-2 bg-gray-800 border border-gray-700 rounded-l-full focus:outline-none focus:border-orange-500">
+                        <button class="bg-orange-500 hover:bg-orange-600 px-6 py-2 rounded-r-full transition-colors">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <p class="text-gray-400 text-sm">Subscribe to our newsletter for updates</p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    Copyright © 2024 Saira by Rachnovanz. All Rights Reserved.
+                </p>
+                <div class="flex space-x-6 text-sm">
+                    <a href="#" class="text-gray-400 hover:text-orange-500 transition-colors">Terms & Services</a>
+                    <a href="#" class="text-gray-400 hover:text-orange-500 transition-colors">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

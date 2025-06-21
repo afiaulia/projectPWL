@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website - Login</title>
+  <link rel="stylesheet" href="styleafi.css" />
+  <style>
+    body { font-family: Arial, sans-serif; padding: 30px; }
+    input, button { display: block; margin: 10px 0; padding: 10px; width: 300px; }
+    .center { display: inline-block; margin-right: 15px; }
+  </style>
+</head>
+<body>
+  <section class="container">
+    <div class="login-container">
+      <div class="circle circle-one"></div>
+      <div class="form-container">
+        <h1 class="opacity">LOGIN</h1>
+        <form id="loginForm">
+          <input type="text" name="username" id="username" placeholder="USERNAME" required />
+          <input type="password" name="password" id="password" placeholder="PASSWORD" required />
+          <button type="submit" class="bg-orange-500 hover:bg-orange-600 px-6 py-2 pb-3 rounded-full transition-colors">SUBMIT</button>
+        </form>
+        
+      </div>
+      <div class="circle circle-two"></div>
+    </div>
+    <div class="theme-btn-container"></div>
+  </section>
+
+  <script>
+    // Simulasi JSON data user
+    const users = [
+      { username: "afi", password: "123456" },
+      { username: "admin", password: "admin123" }
+    ];
+
+    document.getElementById("loginForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value;
+
+      const user = users.find(u => u.username === username && u.password === password);
+
+      if (user) {
+        alert("Login berhasil!");
+        // Redirect ke halaman dashboard/portfolio
+        window.location.href = "index.html";
+      } else {
+        alert("Username atau password salah!");
+      }
+    });
+  </script>
+</body>
+</html>
