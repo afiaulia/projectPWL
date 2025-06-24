@@ -3,9 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>hasan's portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- About Section -->
+    <section id="portfolio" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                     
+                    <div class="w-80 h-80 mx-auto relative">
+                         <svg class="absolute insert-0 w-full h-full" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M100,20 C150,20 150,180 100,180 C50,180 50,20 100,20Z" stroke="#B0A695" stroke-width="2" fill="none"/>
+                          <path d="M20,100 C20,50 180,50 180,100 C180,150 20,150 20,100Z" stroke="#B0A695" stroke-width="2" fill="none"/>
+                        </svg>
+                       
+                        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 to-red-500 rounded-full"></div>
+                        <img src="8.jpg" 
+                             alt="Saira" 
+                             class="absolute inset-4 w-72 h-72 rounded-full object-cover border-4 border-white">
+                        <div class="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-br from-orange-600 rounded-full flex items-center justify-center">
+                            <i class="fas fa-star text-white text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="mb-6">
+                        <h3 class="text-orange-500 text-lg font-semibold mb-2 text-center">About Me</h3>
+                        <h2 class="text-4xl font-bold mb-6">Muhamad Nur Hasan, mahasiswa aktif semester 6 di Universitas Indraprasta PGRI, jurusan Teknik Informatika.</h2>
+                        <p class="text-gray-700 mb-8 leading-relaxed">
+                          Perjalananku di dunia teknologi tak selalu mulus.
+                          Semua bermula saat SMA, ketika aku ikut OSN Informatika.
+                          Sayangnya, langkahku terhenti di tingkat provinsi.
+                          Gagal, tapi dari situlah semangatku tumbuh.
+                          Aku mulai belajar lebih dalam.
+                          Dari buku, video, dan kegagalan-kegagalanku sendiri.
+                          Setiap baris kode membangun kepercayaan diriku kembali.
+                          Sekarang, aku melanjutkan langkah ini di bangku kuliah.
+                          Teknik Informatika jadi tempatku bertumbuh.
+                          Perjalanan masih panjang, tapi aku tahu:
+                          di sinilah aku ingin memberi makna.
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <p class="text-gray-400 mb-1">Name</p>
+                            <p class="font-semibold">Muhamad Nur Hasan</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 mb-1">Phone</p>
+                            <p class="font-semibold">+6282179682221</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 mb-1">Email</p>
+                            <p class="font-semibold">mnurhasan120103@gmail.com</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-400 mb-1">Instagram</p>
+                            <p class="font-semibold">@sandsan_._</p>
+                        </div>
+                    </div>
+                
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <p class="text-orange-500 text-lg font-bold mb-2">
+                            CONTACT ME</p>
+
+                    </div>
+                        <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                        <a href="https://www.github.com/San120103" >
+                            <i class="fa-brands fa-github text-3xl space-x-6"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/16nx6AdZrg/">
+                            <i class="fa-brands fa-facebook text-3xl "></i>
+                        </a>
+                        <a href="https://www.instagram.com/sandsan_._?igsh=MWc3NzRiZmwzYXIyZA==">
+                            <i class="fa-brands fa-instagram text-3xl"></i>
+                        </a>
+                        </div>
+
+                    <br>
+
+                    <button class="border border-gray-600 hover:border-orange-500 px-6 py-3 rounded-full transition-colors flex items-center space-x-2">
+                            <span>Download my resume</span>
+                            <i class="fas fa-download"></i>
+                        </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-white">My Work Skills</h2>
+                <p class="text-gray-400 ">
+                    Saya cukup mampu menggunakan beberapa bahasa pemogramann seperti {HTML, CSS, Java, JavaScript, Python, PHP}, Serta keterampilan dalam menggunakan DMBS seperti MySQL, PostgreSQL, atau SQL server untuk menyimpan dan mengambil data.
+                    Penggunaaan IDE seperti Visual Studio Code, Penggunaan Tools dan Framework yang relevan dengan bahasa pemograman dan teknologi yang digunakan.
+                    Proyek yang sedang saya kerjakan diantaranya : 
+                    1). Pengembangan web/aplikasi pengelola jadwal dan tugas kampus,
+                    2). Video narasi menggunakan aplikasi Canva,
+                    3). Program Tim PKM-Kewirausahaan Proposal Usaha,
+                    4). Perancangan Sistem manajemen Perkebunnan Berbasis GEOGRAPHIC INFORMATION SYSTEM (GIS) dan Android.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center group">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-blue-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i class="fab fa-figma text-2xl text-white"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2 text-white">Figma</h3>
+                    <div class="w-full bg-gray-700 rounded-full h-2">
+                        <div class="bg-orange-500 h-2 rounded-full" style="width: 65%"></div>
+                    </div>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-blue-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i class="fab fa-wordpress text-2xl text-white"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2 text-white">WordPress</h3>
+                    <div class="w-full bg-gray-700 rounded-full h-2">
+                        <div class="bg-orange-500 h-2 rounded-full" style="width: 40%"></div>
+                    </div>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-green-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i class="fas fa-code text-2xl text-white"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2 text-white">Web Development</h3>
+                    <div class="w-full bg-gray-700 rounded-full h-2">
+                        <div class="bg-orange-500 h-2 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-red-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i class="fas fa-palette text-2xl text-white"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2 text-white">Web Design</h3>
+                    <div class="w-full bg-gray-700 rounded-full h-2">
+                        <div class="bg-orange-500 h-2 rounded-full" style="width: 75%"></div>
+                    </div>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-yellow-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i class="fas fa-vector-square text-2xl text-white"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2 text-white">Sketch</h3>
+                    <div class="w-full bg-gray-700 rounded-full h-2">
+                        <div class="bg-orange-500 h-2 rounded-full" style="width: 95%"></div>
+                    </div>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-pink-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i class="fas fa-pen-nib text-2xl text-white"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2 text-white">Word</h3>
+                    <div class="w-full bg-gray-700 rounded-full h-2">
+                        <div class="bg-orange-500 h-2 rounded-full" style="width: 70%"></div>
+                    </div>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-purple-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i class="fas fa-video text-2xl text-white"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2 text-white">Video Editing</h3>
+                    <div class="w-full bg-gray-700 rounded-full h-2">
+                        <div class="bg-orange-500 h-2 rounded-full" style="width: 60%"></div>
+                    </div>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="w-20 h-20 mx-auto mb-4 bg-indigo-500 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i class="fas fa-mobile-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="font-semibold mb-2 text-white">Mobile App</h3>
+                    <div class="w-full bg-gray-700 rounded-full h-2">
+                        <div class="bg-orange-500 h-2 rounded-full" style="width: 30%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
